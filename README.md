@@ -15,8 +15,11 @@ Furthermore, I am proud of the elegance of the project we’ve made. Although th
 Also, I must say that our product name was excellently selected. LinkLives is short enough to be an effective URL shortening domain, while still capturing the main ideas of the project in the two words.
 ## What I learned
 -The parts of a project you least suspect trouble from could very well be the most difficult parts to complete.
+
 -Passion can supplement technical skill to a certain extent, but mentors do even better.
-What's next
+## What's next
 -Implement a counter of “lives saved” as a function of the total donation dollar amount, and the expert estimations of how effective mosquito nets are at promoting longevity in areas affected by malaria.
+
 -get the word out about linkliv.es to users of websites like twitter, who rely heavily on link shortening technology.
+
 -On link generation page: better explain the service, and improve user interface.
