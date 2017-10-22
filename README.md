@@ -25,3 +25,9 @@ Also, I must say that our product name was excellently selected. LinkLiv.es is s
 -get the word out about LinkLiv.es to users of websites like Twitter, who rely heavily on link shortening technology.
 
 -On link generation page: better explain the service, and improve user interface.
+
+
+...
+
+Also worth mentioning: to aid outreach on Social Media, we started prototyping a comment bot project that implements LinkedLiv.es
+https://github.com/IgorBanin/dubhacks2017.git
