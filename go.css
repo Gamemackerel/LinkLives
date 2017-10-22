@@ -1,0 +1,92 @@
+body {
+	background-color: #8ab4a9;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-size: 18pt;
+	margin: 0;
+	padding: 0;
+}
+
+#headingDiv {
+	margin-top:5px;
+	overflow: hidden;
+	float: left;
+	margin-left: 40px;
+}
+
+img {
+	left: 0;
+	top:0;
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	float: left;
+}
+
+#desc {
+	position: relative;
+	text-align:center;
+	color:white;
+	top: 60px;
+	font-weight: bold;
+}
+
+
+#advertise {
+	margin: 0 auto;
+	position: relative;
+	top: 150px;
+	padding: 20px;
+	width: 560px;
+	border: 2px solid #8EBEBE;
+	background-color: #bad2d6;
+	text-align: center;
+}
+
+#counterAndLink {
+	float: right;
+	margin-right: 40px;
+	vertical-align: center;
+	position: relative;
+}
+
+#count {
+	padding: 12px; 
+	width: 100px;
+	font-weight: bold; 
+}
+
+#linkBox {
+	padding: 10px; 
+	margin-top: 10px;
+	width: 100px;
+	border-radius: 5px;
+	border-color: #dbe8ff;
+	border-style: solid;
+	border-size: 2px; 
+	background-color: #5abca3;
+}
+
+#link{
+	vertical-align: center;
+	position: relative;
+	color: white;
+}
+
+#linkBox:hover {
+	background-color: #dbe8ff;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+	padding: 10px;
+	width: 100%; 
+	font-size: 12px;
+	background-color: #5abca3;
+	position: absolute;
+	bottom: 0;
+}
