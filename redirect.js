@@ -8,7 +8,7 @@
 		setInterval(countDown, 1000);	
 		$("#link").hide();
 		if(getParameterByName('k') == null) {
-			window.location = "/admin/";
+			window.location = "make.html";
 		}
 	};
 
