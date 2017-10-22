@@ -5,14 +5,16 @@ LinkLiv.es is a link management solution that allows long URLs to be represented
 
 The motto of LinkLiv.es is: _Shorten Links, Save Lives_.
 ## How I built it
-LinkLiv.es is built upon an existing link shortening algorithm. We use server-less AWS lambda functions to generate short linkliv.es ‘key’ links. The short key URLs correspond to a dynamic redirect page that displays an advertisement for 15 seconds before using the key to retrieve the full URL and allowing the user to continue to the final target website.
+LinkLiv.es is built upon an existing link shortening algorithm and AWS architecture. Our backend is extremely scalable through Amazon CloudFront, S3 Bucket, and serverless Lambda functions. We use Lambda functions to generate short LinkLiv.es ‘key’ links. The short key URLs are stored on an Amazon S3 bucket and correspond to a dynamic redirect page that displays an advertisement for 15 seconds before using the key to retrieve the full URL and allowing the user to continue to the final target website. We run a small example EC2 instance webserver to take LinkLiv.es requests and dynamically redirect them to the correct link on our CloudFront distribution. 
+
 ## Challenges I ran into
-Using AWS lambda functions proved to cause a major headache for a team of novice programmers with no experience in cloud computing. Although it was fun to be challenged learning a new technology, we all agree that it would have been a better decision to build linkedliv.es with php, a technology that at least one of us had some experience with. 
-Additionally, implementing advertisements is not as quick of a process as we expected. Bureaucracy takes time that hackathons cannot provide, so we were unfortunately could not start collecting donations before the end of the hackathon. As a temporary placeholder for monetized advertisements, we are using the space for a video advertisement for the Against Malaria Foundation itself.
+Leveraging AWS architecture proved to cause a major headache for a team of novice programmers with minimal experience in scalable cloud computing. Although it was fun to be challenged learning a new technology, we all agree that it would have been a better decision to build our prototype on a simpler, more-familiar-to-us, traditional application server/database server stack. But where would the fun be in that?
+
+Additionally, implementing the advertisements themselves is not as quick of a process as we expected. Bureaucracy takes time that hackathons cannot provide, so we were unfortunately could not start collecting donations before the end of the hackathon. As a temporary placeholder for monetized advertisements, we are using the space for a video advertisement for the Against Malaria Foundation itself.
 ## Accomplishments that I'm proud of
 I am incredibly proud of both myself and my teammates for producing a complete web based service within 24 hours, let alone one that is ready to provide real help for struggling people in third world countries! 
 Furthermore, I am proud of the elegance of the project we’ve made. Although the scale of this project was small, I believe the ethical impact could be larger than any other project, coding or otherwise, that I have yet made. A simple web service, but with a significant impact.
-Also, I must say that our product name was excellently selected. LinkLives is short enough to be an effective URL shortening domain, while still capturing the main ideas of the project in the two words.
+Also, I must say that our product name was excellently selected. LinkLiv.es is short enough to be an effective URL shortening domain, while still capturing the main ideas of the project in the two words.
 ## What I learned
 -The parts of a project you least suspect trouble from could very well be the most difficult parts to complete.
 
@@ -20,6 +22,6 @@ Also, I must say that our product name was excellently selected. LinkLives is sh
 ## What's next
 -Implement a counter of “lives saved” as a function of the total donation dollar amount, and the expert estimations of how effective mosquito nets are at promoting longevity in areas affected by malaria.
 
--get the word out about linkliv.es to users of websites like twitter, who rely heavily on link shortening technology.
+-get the word out about LinkLiv.es to users of websites like Twitter, who rely heavily on link shortening technology.
 
 -On link generation page: better explain the service, and improve user interface.
